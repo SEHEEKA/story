@@ -219,7 +219,7 @@ body {
 @media(max-width:500px){
     .chatbox {
         position: absolute;
-        bottom: -600px;
+        bottom: -550px;
         right: 30px;
     }
 }
