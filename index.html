@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.5.1/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chatbot/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Peter's Pathway</title>
+    <link rel="icon" href="love.png" type="image/x-icon" sizes="512x512">
+  
+
+
+</head>
+<body>
+
+    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+              
+                <path d="M17 16C15.8 17.3235 12.5 20.5 12.5 20.5C12.5 20.5 9.2 17.3235 8 16C5.2 12.9118 4.5 11.7059 4.5 9.5C4.5 7.29412 6.1 5.5 8.5 5.5C10.5 5.5 11.7 6.82353 12.5 8.14706C13.3 6.82353 14.5 5.5 16.5 5.5C18.9 5.5 20.5 7.29412 20.5 9.5C20.5 11.7059 19.8 12.9118 17 16Z" width="2.5"></path>
+                
+            </svg>
+            
+            <span class="my-span">  Peter's PathWay</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="love.html" class="mr-5 hover:text-gray-900">Made with Love</a>
+            <a href="https://music-peter.pages.dev/" class="mr-5 hover:text-gray-900">Music</a>
+          </nav>
+          
+        </div>
+      </header> 
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 h-1 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="1.png">
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <image src="rounded_corners-removebg-preview.png"></image>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">To Peter,</h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                  <p class="te">With Love,</br>Z
+             </p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="te">Happy Birthday Peter! On this special day, I hope you feel loved and celebrated. May this new year of your life be filled with joy, laughter, and countless blessings. May your dreams come true, and may you find happiness in everything you do. Enjoy your special day to the fullest. Remember, my heart is always with you, no matter the miles that separate us. Cheers to another year of adventures and beautiful memories!</p>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="chatbot/IMG_0753.PNG" width="50px">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">ZaikaBot</h4>
+                        <p class="chatbox__description--header">Hi there!</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div class = "chatb" id="chatboxs">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                    
+                </div>
+                <div class="chatbox__footer">
+                    <input id="textInput" type="text" placeholder="Write a message...">
+                    <i id="chat-icon" style="color: #312f2f;" class="fa fa-fw fa-send"
+                    onclick="sendButton()"></i>
+                </div>
+            </div>
+    
+            <div id="chat-bar-bottom">
+                <p></p>
+            </div>
+            
+            <div class="chatbox__button">
+                <button><img src="./chatbot/images/chatbox-icon.svg" /></button>
+            </div>
+        </div>
+    </div>
+    
+    
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./chatbot/app.js"></script>
+        <script src="./chatbot/images/chat.js"></script>
+        <script src="./chatbot/images/response.js"></script>
+    </html>
+
+      
+        

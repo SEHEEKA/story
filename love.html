@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access</title>
+	
+
+    <style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+            background-color: brown;
+
+		}
+		label, input[type="submit"] {
+			margin: 10px;
+			font-size: large;
+			border-radius: 10px;
+			font-weight: bold;
+		
+		}
+		@media(max-width:500px){
+                label{
+                font-size: 20px;
+            }
+		}
+
+		
+	</style>
+	<script>
+		function validateForm() {
+			var password = document.getElementById("password").value;
+			if (password.toLowerCase() === "may26") {
+				return true; 
+			} else {
+				alert("You failed me!.");
+				return false; 
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="love2.html" onsubmit="return validateForm()">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Date we started speaking?">
+		<br><br>
+		<input type="submit" value="Let's See">
+	</form>
+</body>
+</html>
