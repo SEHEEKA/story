@@ -12,10 +12,10 @@ function getBotResponse(input) {
        return "I'm great how about you?"
     
     } 
-    else if(input.toLowerCase()=="i'm good too"||"iam good too"||"i'm fine"||"i'm fine too"){
+    else if(input.toLowerCase()=="i'm good too"||input.toLowerCase()=="iam good too"||input.toLowerCase()=="i'm fine"||input.toLowerCase()=="i'm fine too"){
      return "Good!"
     }
-    else if (input.toLowerCase() == "i love you") {
+    else if (input.toLowerCase() == "i love you"||input.toLowerCase()=="i love you a lot") {
         return "I love you too";
     }
     else if (input == "hello" || input =="hi") {
@@ -26,14 +26,14 @@ function getBotResponse(input) {
     else if (input.toLowerCase() == "i miss you"){
       return "I miss you too"
     } 
-    else if(input.toLowerCase() == "do you love me"){
+    else if(input.toLowerCase() == "do you love me?"){
         return "A lot"
     }
-    else if(input.toLowerCase()=="how much do you love me" || input.toLowerCase()=="how much"){
+    else if(input.toLowerCase()=="how much do you love me?" || input.toLowerCase()=="how much"){
    return "Infinity"
     }
-        else {
+    else {
     
-        return "Try asking something else!";
+        return "yeah right";
     }
 }
